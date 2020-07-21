@@ -36,45 +36,45 @@ All the links are refered to port 5000. But your application might run in anothe
 
 ### Company
 
-**Retrive all companies** 
+**Retrive all companies** \
 `GET` http://127.0.0.1:5000/companies
 
 
-**Create new company** 
+**Create new company** \
 `POST` http://127.0.0.1:5000/company
 Parameters:
 &nbsp;&nbsp;&nbsp;&nbsp;name
 
-**Retrive data from one company** 
+**Retrive data from one company** \
 `GET` http://127.0.0.1:5000/company/<company_id>
 
 ### Collaborator
 
-**Retrive all collaborators** 
+**Retrive all collaborators** \
 `GET` http://127.0.0.1:5000/collaborators
 
-**Create new collaborator** 
+**Create new collaborator** \
 `POST`http://127.0.0.1:5000/collaborator
 Parameters:
 &nbsp;&nbsp;&nbsp;&nbsp;name
 &nbsp;&nbsp;&nbsp;&nbsp;email
 &nbsp;&nbsp;&nbsp;&nbsp;company_id
 
-**Retrive data from one collaborator** 
+**Retrive data from one collaborator** \
 `GET` http://127.0.0.1:5000/collaborator/<collaborator_id>
 
-**Delete one collaborator** 
+**Delete one collaborator** \
 `DELETE` http://127.0.0.1:5000/collaborator/<collaborator_id>
 
 ### Company-Collaborator
 
-**Retrive collaborators from one company** 
+**Retrive collaborators from one company** \
 `GET` http://127.0.0.1:5000/company/<comany_id>/collaborators
 
-**Register a collaborator to a company** 
+**Register a collaborator to a company** \
 `PUT`http://127.0.0.1:5000/company/<comany_id>/collaborator/<collaborator_id>
 
-**Delete one from a company** 
+**Delete one from a company** \
 `DELETE` http://127.0.0.1:5000/company/1/collaborator/1
 
 
