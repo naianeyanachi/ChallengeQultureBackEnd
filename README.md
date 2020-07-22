@@ -25,11 +25,11 @@ python3 server.py
 ```
 
 ## Database Documentation
-The database diagram:
+The database diagram:\
 ![database](./doc/img/database.jpg)
 
 ## API Documentation
-There is a Postman collection to import with this link:
+There is a Postman collection with sample API calls and some simple tests. Import it with this link:
 https://www.getpostman.com/collections/4ad7d24e8bb44b995b6e
 
 All the links are refered to port 5000. But your application might run in another port.
@@ -77,4 +77,17 @@ Parameters:
 **Delete one from a company** \
 `DELETE` http://127.0.0.1:5000/company/1/collaborator/1
 
+### Manager
+
+**Create new relation between manager and collaborator** \
+`POST`http://127.0.0.1:5000/manager/<manager_id>/collaborator/<collaborator_id>
+
+**Retrive collaborators of a manager** \
+`GET` http://127.0.0.1:5000/manager/<manager_id>/collaborators
+
+**Retrive second level collaborators of a manager** \
+`GET` http://127.0.0.1:5000/manager/<manager_id>/managers/collaborators
+
+**Retrive second level collaborators of a manager** \
+`GET` http://127.0.0.1:5000/collaborator/<collaborator_id>/team
 
