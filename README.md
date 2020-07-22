@@ -41,8 +41,8 @@ All the links are refered to port 5000. But your application might run in anothe
 
 
 **Create new company** \
-`POST` http://127.0.0.1:5000/company
-Parameters:
+`POST` http://127.0.0.1:5000/company \
+Parameters: \
 &nbsp;&nbsp;&nbsp;&nbsp;name
 
 **Retrive data from one company** \
@@ -54,10 +54,10 @@ Parameters:
 `GET` http://127.0.0.1:5000/collaborators
 
 **Create new collaborator** \
-`POST`http://127.0.0.1:5000/collaborator
-Parameters:
-&nbsp;&nbsp;&nbsp;&nbsp;name
-&nbsp;&nbsp;&nbsp;&nbsp;email
+`POST`http://127.0.0.1:5000/collaborator \
+Parameters: \
+&nbsp;&nbsp;&nbsp;&nbsp;name \
+&nbsp;&nbsp;&nbsp;&nbsp;email \
 &nbsp;&nbsp;&nbsp;&nbsp;company_id
 
 **Retrive data from one collaborator** \
